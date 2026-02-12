@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[Русская версия](README.ru.md) | English
+
 A minimalistic adapter for [logspout](https://github.com/gliderlabs/logspout) to send notifications to [SigNoz](https://signoz.io/) using http(s) endpoint.
 
 ### Why do I need this?
@@ -65,7 +67,7 @@ docker run -d \
         --volume=/var/run/docker.sock:/var/run/docker.sock \
         -e 'SIGNOZ_LOG_ENDPOINT=http://1.2.3.4:8082' \
         -e 'ENV=prod' \
-        pavanputhra/logspout-signoz \
+        orendat/logspout-signoz \
         signoz://localhost:8082
 ```
 
@@ -89,7 +91,7 @@ In a nutshell, copy the contents of the `custom` folder and add the following im
 package main
 
 import (
-  _ "github.com/pavanputhra/logspout-signoz/signoz"
+  _ "github.com/pavel-one/logspout-signoz/signoz"
   // ...
 )
 ```
