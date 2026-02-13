@@ -1,6 +1,6 @@
 # Bump
 
-`version=1`
+`version=1.1`
 
 This file is used to trigger the build process.
 
